@@ -413,7 +413,7 @@ footer > .google_menu > div > .sns > a:hover > div {display:block;}
 
 /* 600 이하  */
 @media screen and (max-width:600px) {
-	.wrap header {margin:0 16px;}
+	.wrap header {margin:0; padding:10px}
 	.wrap header .search_sub > a {display:none}
 	.wrap header .search_sub.on > a {display:none}
 
