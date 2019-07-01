@@ -124,6 +124,7 @@ a:hover {text-decoration: none;}
 	}
 	.wrap > header > .side_menu > div:nth-child(6) {padding-bottom:75px;}
 	.wrap > header > .side_menu > .language {margin-left:-900px; transition:1s ease; }
+	.wrap  .black {background-color:rgba(0, 0, 0, 0.6) ; position: absolute; top:0; bottom:0; left:0; right:0;}
 	.wrap  .black.on {background-color:rgba(0, 0, 0, 0.6) ; position: absolute; top:0; bottom:0; left:0; right:0; z-index:20;}
 	.wrap > header > .side_menu.on {margin:0; transition:0.3s ease; padding:0 24px;}
 	
