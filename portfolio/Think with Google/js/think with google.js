@@ -29,7 +29,8 @@ window.onload = function() {
     var search = document.querySelector(".search");
     var searchSub = document.querySelector(".search_sub");
     var header = document.querySelector("header");
-    console.log(header)
+    var mainEl = document.querySelector("main");
+    console.log(mainEl)
 
     search.addEventListener("click", clickWork);
 
@@ -38,8 +39,13 @@ window.onload = function() {
         if ( searchSub.className !== "search_sub on" ) {
             searchSub.classList.add("on");
             header.style.zIndex = "20"; 
+            mainEl.classList.add("down");
+
         } else {console.log(searchSub);
-        searchSub.classList.remove("on");
+            searchSub.classList.remove("on");
+            header.style.zIndex = "0"; 
+            mainEl.classList.remove("down");
+            
         }
         
     }
