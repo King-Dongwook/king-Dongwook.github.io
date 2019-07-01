@@ -43,7 +43,7 @@ window.onload = function() {
 
         } else {console.log(searchSub);
             searchSub.classList.remove("on");
-            header.style.zIndex = "20"; 
+            header.style.zIndex = ""; 
             mainEl.classList.remove("down");
             
         }
