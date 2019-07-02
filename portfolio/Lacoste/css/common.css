@@ -106,11 +106,19 @@ img {vertical-align: top;}
 /* 헤더 끝 */
 
 /* 작은 헤더 시작 */
-.wrap > .header_small {padding:10px }
-.wrap > .header_small {display:none; border:px solid red; text-align: center}
+.wrap > .header_small {display:none; border:px solid red; text-align: center; padding:10px; }
+
 .wrap > .header_small > h2 {border:px solid black;  }
 .wrap > .header_small > h2 > a {border:px solid lime;}
 .wrap > .header_small > h2 > a > img {border:px solid blue; }
+
+.wrap > .header_small > .white {opacity:0; position:fixed; top:63px; left:0; bottom:0; right:0px; background-color:white; transition:all 0.2s ease;}
+.wrap > .header_small > .white > textarea {
+	width:calc(90% - 80px); font-size:32px; margin:0 40px; border:none; box-direction: none;
+}
+.white > textarea::placeholder { color:rgb(196, 196, 196);}
+.wrap > .header_small > .white > a {border:1px solid red; display:block; float:right; margin:10px 10px 0 0;}
+.wrap > .header_small > .white.on {opacity: 1; transition:all 0.5s ease;}
 
 .wrap > .header_small > .search_small {border:px solid red; position:absolute; top:12px; left:40px;}
 .wrap > .header_small > div {position:absolute; top:12px; right:45px;}
@@ -119,7 +127,7 @@ img {vertical-align: top;}
 
 
 /* 메인 시작 */
-.wrap > main { border:px solid black; width:100%; margin-top:85px;}
+.wrap > main { border:px solid black; width:100%; margin-top:63px;}
 .wrap > main > .visual.small {display:none;}
 .wrap > main > .visual {border:px solid red; display:block; position:relative;}
 .wrap > main > .visual > img {border:px solid black; vertical-align:top; width:100%}
