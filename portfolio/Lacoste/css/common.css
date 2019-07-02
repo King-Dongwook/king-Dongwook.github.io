@@ -112,17 +112,40 @@ img {vertical-align: top;}
 .wrap > .header_small > h2 > a {border:px solid lime;}
 .wrap > .header_small > h2 > a > img {border:px solid blue; }
 
-.wrap > .header_small > .white {opacity:0; position:fixed; top:63px; left:0; bottom:0; right:0px; background-color:white; transition:all 0.2s ease;}
+.wrap > .header_small > .white {opacity:0; visibility: hidden; position:fixed; top:63px; left:0; bottom:0; right:0px; background-color:white; transition:all 0.2s ease;}
 .wrap > .header_small > .white > textarea {
 	width:calc(90% - 80px); font-size:32px; margin:0 40px; border:none; box-direction: none;
 }
 .white > textarea::placeholder { color:rgb(196, 196, 196);}
 .wrap > .header_small > .white > a {border:1px solid red; display:block; float:right; margin:10px 10px 0 0;}
-.wrap > .header_small > .white.on {opacity: 1; transition:all 0.5s ease;}
+.wrap > .header_small > .white.on {opacity: 1; visibility: visible; transition:all 0.5s ease;}
 
 .wrap > .header_small > .search_small {border:px solid red; position:absolute; top:12px; left:40px;}
 .wrap > .header_small > div {position:absolute; top:12px; right:45px;}
 .wrap > .header_small > div > .header_sub_shop {margin-right:15px;}
+
+.wrap > .header_small > div > .header_sub_menu_sub { margin-left:100%;
+	border:1px solid red; position:fixed; top:0; left:0; bottom:0; right:0; background-color:white; padding:20px 0;
+}
+.wrap > .header_small > div > .header_sub_menu_sub.on {margin:0; transition:all 0.4s ease;}
+.wrap > .header_small > div > .header_sub_menu_sub > * {border:1px solid blue; padding:0 170px;}
+.wrap > .header_small > div > .header_sub_menu_sub > span {border-bottom:1px solid gray; display:block; font-size:15px; text-align: left; overflow:hidden; padding-bottom:10px;}
+.wrap > .header_small > div > .header_sub_menu_sub > span > a {border:px solid red; display:block; float:right; margin-top:-10px}
+
+.wrap > .header_small > div > .header_sub_menu_sub > .main_menu > div {border:1px solid green; font-size:22px; text-align: left;}
+.wrap > .header_small > div > .header_sub_menu_sub > .main_menu > div > a {padding:10px 0; display:block;}
+
+.wrap > .header_small > div > .header_sub_menu_sub > .thema_menu {background-color:rgb(242, 242, 242); padding:20px 170px; font-size:0}
+.wrap > .header_small > div > .header_sub_menu_sub > .thema_menu > span {display:block; font-size:10px; text-align: left; padding-bottom:15px; }
+.wrap > .header_small > div > .header_sub_menu_sub > .thema_menu > div {border:1px solid black; overflow:hidden;}
+.wrap > .header_small > div > .header_sub_menu_sub > .thema_menu > div > a {display:block; float:left;
+	border:1px solid rgb(159, 159, 159); background-color: white; font-size:17px; padding:12px 27px; border-radius:50px; 
+}
+.thema_menu > div > a + a {margin-left:15px}
+
+.wrap > .header_small > div > .header_sub_menu_sub > .etc_menu > div {border:1px solid black;}
+.wrap > .header_small > div > .header_sub_menu_sub > .etc_menu > div > a {border:1px solid red}
+
 /* 작은 헤더 끝 */
 
 
