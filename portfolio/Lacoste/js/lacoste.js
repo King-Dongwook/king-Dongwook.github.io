@@ -37,10 +37,11 @@ window.onload = function() {
 	}
 
 	// 우선 햄버거메뉴먼저 할래
+	var headerSmall = document.querySelector(".header_small");
 	searchMenu();
 	function searchMenu() {
 		var htmlEl = document.querySelector("html");
-		var headerSmall = document.querySelector(".header_small");
+		
 		var search = headerSmall.querySelector(".search_small");
 		var white = headerSmall.querySelector(".white");
 		var whiteClose = white.querySelector(".close")
@@ -54,7 +55,7 @@ window.onload = function() {
 				white.classList.remove("on");
 				htmlEl.style.overflow = "scroll";
 			} else {
-				white.style.display = "block";
+				
 				white.classList.add("on");
 				htmlEl.style.overflow = "hidden";
 			}
@@ -64,9 +65,36 @@ window.onload = function() {
 			e.preventDefault();
 			white.classList.remove("on");			
 			htmlEl.style.overflow = "scroll";
-			white.style.display = "none";
+			
 		}
 	}
-}
+
+	rightMainMenu();
+	function rightMainMenu() {
+		var menuEl = headerSmall.querySelector(".header_sub_menu_sub");
+		var menuBtn = headerSmall.querySelector(".header_sub_menu");
+		var close = menuEl.querySelector("span > a");
+
+		console.log(close);
+		menuBtn.onclick = function (e) {
+			e.preventDefault();
+			if (menuEl.classList.contains("on")) {
+				menuEl.classList.remove("on");
+			} else {
+				menuEl.classList.add("on");
+			}
+		}
+		close.onclick = function (e) {
+			e.preventDefault();
+			menuEl.classList.remove("on");
+		}
+
+	}
+
+
+
+
+
+}//onload end
 	
 
