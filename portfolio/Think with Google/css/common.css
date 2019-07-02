@@ -69,7 +69,7 @@ a:hover {text-decoration: none;}
 .wrap > header > nav > .nav_menu > div.on {background-color: rgb(245, 245, 245); box-shadow:0 2px 3px rgb(184, 184, 184);}
 .wrap > header > nav > .nav_menu:first-child > div.on {box-shadow:none;}
 .wrap > header > nav > .nav_menu > div > a {border:px solid black; padding:15px 13px;}
-.wrap > header > nav > .nav_menu > div.on > a {color:black}
+
 
 
 .wrap > header > nav > .nav_menu > div > a > .nav_menu_icon {
@@ -100,7 +100,9 @@ a:hover {text-decoration: none;}
 
 	.wrap > header > nav > .nav_menu > .nav_menu_sub a {border:px solid red; display: block;
 	margin:0 0; padding:15px 13px;}
-	.wrap > header > nav > .nav_menu > .nav_menu_sub > div > a:hover {color:black; background-color:  rgb(238, 238, 238)}
+	.wrap > header > nav > .nav_menu > .nav_menu_sub > div > a:hover, .wrap > header > nav > .nav_menu > .nav_menu_sub > a:hover {color:black; background-color:  rgb(238, 238, 238)}
+	
+	
 	.wrap > header > nav > .nav_menu > .nav_menu_sub > .nav_menu_sub_top > a:last-child {border-bottom:1px solid rgb(190, 190, 190);}
 
 	.wrap > header > nav > .nav_menu:nth-child(3) > .nav_menu_sub {right:0;}
