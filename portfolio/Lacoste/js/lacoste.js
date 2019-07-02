@@ -33,6 +33,39 @@ window.onload = function() {
 	}
 	function leaveWork(e) {
 		console.log("leave");
+		e.target.classList.remove("on")
+	}
+
+	// 우선 햄버거메뉴먼저 할래
+	searchMenu();
+	function searchMenu() {
+		var htmlEl = document.querySelector("html");
+		var headerSmall = document.querySelector(".header_small");
+		var search = headerSmall.querySelector(".search_small");
+		var white = headerSmall.querySelector(".white");
+		var whiteClose = white.querySelector(".close")
+
+
+		console.log(search);
+
+		search.onclick = function(e) {
+			e.preventDefault();
+			if (white.classList.contains("on")) {
+				white.classList.remove("on");
+				htmlEl.style.overflow = "scroll";
+			} else {
+				white.style.display = "block";
+				white.classList.add("on");
+				htmlEl.style.overflow = "hidden";
+			}
+			
+		}
+		whiteClose.onclick = function(e) {
+			e.preventDefault();
+			white.classList.remove("on");			
+			htmlEl.style.overflow = "scroll";
+			white.style.display = "none";
+		}
 	}
 }
 	
