@@ -12,6 +12,7 @@ window.onload = function() {
     }
     var a;
     function enterWork(e) {
+        e.preventDefault();
         var subMenu = e.target.querySelector(".nav_menu_sub");
         e.target.children[0].classList.add("on");
         if (!subMenu) {return;}
@@ -19,7 +20,8 @@ window.onload = function() {
         
         a = subMenu;			
     }
-    function leaveWork(e) {			
+    function leaveWork(e) {
+        e.preventDefault();	
         e.target.children[0].classList.remove("on");
         if (!a) {return;}
         a.classList.remove("on");			
@@ -34,7 +36,8 @@ window.onload = function() {
 
     search.addEventListener("click", clickWork);
 
-    function clickWork() {
+    function clickWork(e) {
+        e.preventDefault();
         
         if ( searchSub.className !== "search_sub on" ) {
             searchSub.classList.add("on");
@@ -59,14 +62,16 @@ window.onload = function() {
     menuSmall.addEventListener("click", smallWork);
     cancel.addEventListener("click", cancelWork);
 
-    function smallWork() {
+    function smallWork(e) {
+        e.preventDefault();
         sideMenu.classList.add("on");
         htmlEl.style.overflow = "hidden"
         black.classList.add("on");
 
         console.log(menuSmall)
     }
-    function cancelWork() {
+    function cancelWork(e) {
+        e.preventDefault();
         sideMenu.classList.remove("on");
         htmlEl.style.overflow = "scroll"
         black.classList.remove("on");
