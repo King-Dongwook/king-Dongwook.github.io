@@ -38,9 +38,10 @@ window.onload = function() {
 
 	// 우선 햄버거메뉴먼저 할래
 	var headerSmall = document.querySelector(".header_small");
+	var htmlEl = document.querySelector("html");
 	searchMenu();
 	function searchMenu() {
-		var htmlEl = document.querySelector("html");
+		
 		
 		var search = headerSmall.querySelector(".search_small");
 		var white = headerSmall.querySelector(".white");
@@ -80,13 +81,20 @@ window.onload = function() {
 			e.preventDefault();
 			if (menuEl.classList.contains("on")) {
 				menuEl.classList.remove("on");
+				htmlEl.style.overflowY = "scroll";
+				menuEl.style.overflow = "hidden";
 			} else {
 				menuEl.classList.add("on");
+				htmlEl.style.overflow = "hidden"
+				setTimeout(function(){menuEl.style.overflowX = "hidden";},500)
+				setTimeout(function(){menuEl.style.overflowY = "scroll";},500)
 			}
 		}
 		close.onclick = function (e) {
 			e.preventDefault();
 			menuEl.classList.remove("on");
+			htmlEl.style.overflowY = "scroll";
+			setTimeout(function(){menuEl.style.overflow = "hidden";},500)
 		}
 
 	}
