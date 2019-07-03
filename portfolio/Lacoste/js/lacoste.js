@@ -76,7 +76,6 @@ window.onload = function() {
 		var menuBtn = headerSmall.querySelector(".header_sub_menu");
 		var close = menuEl.querySelector("span > a");
 
-		console.log(close);
 		menuBtn.onclick = function (e) {
 			e.preventDefault();
 			if (menuEl.classList.contains("on")) {
@@ -96,6 +95,12 @@ window.onload = function() {
 			htmlEl.style.overflowY = "scroll";
 			setTimeout(function(){menuEl.style.overflow = "hidden";},500)
 		}
+		
+		var mainEl = menuEl.querySelector("div > div");
+		var mainBtnS = document.querySelectorAll(".main_menu > div");
+		var nextEl = menuEl.querySelector("div > div > .next_menu")
+
+		console.log(mainBtnS)
 
 	}
 
