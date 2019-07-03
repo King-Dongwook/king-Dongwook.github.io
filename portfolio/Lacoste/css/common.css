@@ -143,6 +143,8 @@ a:hover {text-decoration-line: none}
 .wrap > .header_small > div > .header_sub_menu_sub > .main_menu > div > a {padding:11px 0; display:block; color:black;}
 .wrap > .header_small > div > .header_sub_menu_sub > .main_menu > div:nth-child(4) > a {color:rgb(214, 175, 103)}
 
+.wrap > .header_small > div > .header_sub_menu_sub > .main_menu > div > .next_menu {border:1px solid black; }
+
 
 .wrap > .header_small > div > .header_sub_menu_sub > .thema_menu {background-color:rgb(242, 242, 242); padding:20px 170px; font-size:0}
 .wrap > .header_small > div > .header_sub_menu_sub > .thema_menu > span {display:block; font-size:10px; text-align: left; }
@@ -161,30 +163,6 @@ a:hover {text-decoration-line: none}
 .wrap > .header_small > div > .header_sub_menu_sub > .etc_menu > div > a > img { vertical-align:middle; width:33px; padding-right:20px}
 .wrap > .header_small > div > .header_sub_menu_sub > .etc_menu > div:last-child > a > img {margin-top:-20px; padding-bottom:20px;}
 
-
-
-/* =======
-	border:1px solid red; position:fixed; top:0; left:0; bottom:0; right:0; background-color:white; padding:20px 0;
-}
-.wrap > .header_small > div > .header_sub_menu_sub.on {margin:0; transition:all 0.4s ease;}
-.wrap > .header_small > div > .header_sub_menu_sub > * {border:1px solid blue; padding:0 170px;}
-.wrap > .header_small > div > .header_sub_menu_sub > span {border-bottom:1px solid gray; display:block; font-size:15px; text-align: left; overflow:hidden; padding-bottom:10px;}
-.wrap > .header_small > div > .header_sub_menu_sub > span > a {border:px solid red; display:block; float:right; margin-top:-10px}
-
-.wrap > .header_small > div > .header_sub_menu_sub > .main_menu > div {border:1px solid green; font-size:22px; text-align: left;}
-.wrap > .header_small > div > .header_sub_menu_sub > .main_menu > div > a {padding:10px 0; display:block;}
-
-.wrap > .header_small > div > .header_sub_menu_sub > .thema_menu {background-color:rgb(242, 242, 242); padding:20px 170px; font-size:0}
-.wrap > .header_small > div > .header_sub_menu_sub > .thema_menu > span {display:block; font-size:10px; text-align: left; padding-bottom:15px; }
-.wrap > .header_small > div > .header_sub_menu_sub > .thema_menu > div {border:1px solid black; overflow:hidden;}
-.wrap > .header_small > div > .header_sub_menu_sub > .thema_menu > div > a {display:block; float:left;
-	border:1px solid rgb(159, 159, 159); background-color: white; font-size:17px; padding:12px 27px; border-radius:50px; 
-}
-.thema_menu > div > a + a {margin-left:15px}
-
-.wrap > .header_small > div > .header_sub_menu_sub > .etc_menu > div {border:1px solid black;}
-.wrap > .header_small > div > .header_sub_menu_sub > .etc_menu > div > a {border:1px solid red}
->>>>>>> 47566d05d50d3ea62a19e7b1cee04958ce75514a */
 
 /* 작은 헤더 끝 */
 
